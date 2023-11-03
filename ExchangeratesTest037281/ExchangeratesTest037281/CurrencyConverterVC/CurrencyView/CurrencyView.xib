@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyView" customModule="ExchangeratesTest037281" customModuleProvider="target">
+            <connections>
+                <outlet property="countCurrencyTextField" destination="Oqy-k9-FbM" id="b3F-tE-htQ"/>
+                <outlet property="currencyPickerView" destination="ppI-UY-RbK" id="opU-Lu-JNW"/>
+                <outlet property="mainCurrencyView" destination="iN0-l3-epB" id="97y-Jb-u6S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-L9-ukF">
+                    <rect key="frame" x="8" y="0.0" width="304" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oqy-k9-FbM">
+                            <rect key="frame" x="0.0" y="3.3333333333333321" width="119" height="37.666666666666671"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fN9-XQ-rIA">
+                            <rect key="frame" x="119" y="0.0" width="2" height="44"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-eA-H4R">
+                                    <rect key="frame" x="0.0" y="4" width="2" height="36"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Gzo-eA-H4R" firstAttribute="leading" secondItem="fN9-XQ-rIA" secondAttribute="leading" id="1Di-6i-HwN"/>
+                                <constraint firstItem="Gzo-eA-H4R" firstAttribute="top" secondItem="fN9-XQ-rIA" secondAttribute="top" constant="4" id="9Pw-fe-47L"/>
+                                <constraint firstAttribute="width" constant="2" id="BDo-Bg-tnr"/>
+                                <constraint firstAttribute="trailing" secondItem="Gzo-eA-H4R" secondAttribute="trailing" id="XPd-vT-fBF"/>
+                                <constraint firstAttribute="bottom" secondItem="Gzo-eA-H4R" secondAttribute="bottom" constant="4" id="q4O-qe-1hw"/>
+                            </constraints>
+                        </view>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppI-UY-RbK">
+                            <rect key="frame" x="121" y="0.0" width="183" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </pickerView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Oqy-k9-FbM" firstAttribute="width" secondItem="ppI-UY-RbK" secondAttribute="width" multiplier="0.65" id="psf-MI-mla"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YeO-L9-ukF" secondAttribute="bottom" id="8N7-L1-Xrq"/>
+                <constraint firstItem="YeO-L9-ukF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9cH-fg-l9l"/>
+                <constraint firstItem="YeO-L9-ukF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dOw-oi-eyd"/>
+                <constraint firstAttribute="trailing" secondItem="YeO-L9-ukF" secondAttribute="trailing" id="mHK-V3-thH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-10.687022900763358" y="-22.535211267605636"/>
+        </view>
+    </objects>
+</document>
